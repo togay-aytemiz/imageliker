@@ -15,6 +15,7 @@ const PhotoCard = ({ photoData, onUpdate }) => {
           <img src={photoData.img} alt="" className="generated-image" />
           <div className="like-counter">
             <Image
+              key={photoData.id}
               src={icon}
               alt="emoji"
               className="emoji-icon"
